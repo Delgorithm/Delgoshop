@@ -6,6 +6,10 @@ const Tshirts = () => {
   return (
     <div>
       <Header />
+      <p>tshirts</p>
+      <picture>
+        <img src="src/assets/Images/men/veste/vestescolor04.jpeg" alt="" />
+      </picture>
       <Footer />
     </div>
   )

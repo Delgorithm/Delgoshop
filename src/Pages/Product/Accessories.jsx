@@ -6,7 +6,7 @@ const Accessories = () => {
   return (
     <div>
       <Header />
-      
+      <p>accessoires</p>
       <Footer />
     </div>
   )

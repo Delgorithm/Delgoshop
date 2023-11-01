@@ -31,6 +31,16 @@ export const jacketPage = [
         id: 1,
         title: "Vestes",
         subtitle: "Notre veste tendance alliant confort et style tout en restant élégant"
+    },
+    {
+        id: 2,
+        title: "Doudoune légère",
+        price: 39.9,
+    },
+    {
+        id: 3,
+        title: "Veste classique",
+        price: 69.90,
     }
 ]
 

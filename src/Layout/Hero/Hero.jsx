@@ -1,6 +1,6 @@
 import React from 'react'
 import { heroText } from '../../data/DataText'
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
 
@@ -26,21 +26,21 @@ const Hero = () => {
         <div className='h-full overflow-x-auto p-3'>
             <div className='flex gap-5 w-max '>
 
-                <button className='flex flex-col items-center gap-1' onClick={() => navigate('/category/jacket')}>
+                <button className='flex flex-col items-center gap-1' onClick={() => navigate('/jacket')}>
                     <picture>
                         <img src="src/assets/Images/men/veste/vestes03.jpeg" alt="Catégorie vestes" className='transition duration-150 ease-in-out w-28 rounded-xl hover:scale-105' />
                     </picture>
                     <p>Vestes</p>
                 </button>
 
-                <button className='flex flex-col items-center gap-1' onClick={() => navigate('/category/tshirts')}>
+                <button className='flex flex-col items-center gap-1' onClick={() => navigate('/tshirts')}>
                     <picture>
                         <img src="src/assets/Images/men/tshirt/tshirt01.jpeg" alt="Catégorie t-shirts" className='transition duration-150 ease-in-out w-28 rounded-xl hover:scale-105' />
                     </picture>
                     <p>T-shirts</p>
                 </button>
 
-                <button className='flex flex-col items-center gap-1' onClick={() => navigate('/category/accessories')}>
+                <button className='flex flex-col items-center gap-1' onClick={() => navigate('/accessories')}>
                     <picture>
                         <img src="src/assets/Images/accessories/sac01.jpeg" alt="Catégorie accessoires" className='transition duration-150 ease-in-out w-28 rounded-xl hover:scale-105' />
                     </picture>
@@ -53,14 +53,14 @@ const Hero = () => {
             <div className='flex justify-around'>
 
                 <div className='p-3 flex flex-col gap-2'>
-                    <button className='flex flex-col items-center gap-1' onClick={() => navigate('/category/jacket')}>
+                    <button className='flex flex-col items-center gap-1' onClick={() => navigate('/jacket')}>
                         <picture>
                             <img src="src/assets/Images/men/pull/mpull02.jpeg" alt="Catégorie vestes" className='transition duration-150 ease-in-out w-28 rounded-xl hover:scale-105' />
                         </picture>
                         <p>Pull</p>
                     </button>
 
-                    <button className='flex flex-col items-center gap-1' onClick={() => navigate('/category/accessories')}>
+                    <button className='flex flex-col items-center gap-1' onClick={() => navigate('/accessories')}>
                         <picture>
                             <img src="src/assets/Images/accessories/sac04.jpeg" alt="Catégorie accessoires" className='transition duration-150 ease-in-out w-28 rounded-xl hover:scale-105' />
                         </picture>
@@ -69,14 +69,14 @@ const Hero = () => {
                 </div>
 
                 <div className='p-3 flex flex-col gap-2'>
-                    <button className='flex flex-col items-center gap-1' onClick={() => navigate('/category/jacket')}>
+                    <button className='flex flex-col items-center gap-1' onClick={() => navigate('/jacket')}>
                         <picture>
                             <img src="src/assets/Images/men/tshirt/tshirt07.jpeg" alt="Catégorie vestes" className='transition duration-150 ease-in-out w-28 rounded-xl hover:scale-105' />
                         </picture>
                         <p>T-shirt</p>
                     </button>
 
-                    <button className='flex flex-col items-center gap-1' onClick={() => navigate('/category/accessories')}>
+                    <button className='flex flex-col items-center gap-1' onClick={() => navigate('/accessories')}>
                         <picture>
                             <img src="src/assets/Images/men/veste/vestes05.jpeg" alt="Catégorie accessoires" className='transition duration-150 ease-in-out w-28 rounded-xl hover:scale-105' />
                         </picture>
