@@ -4,7 +4,7 @@ import Home from './Pages/Home/Home';
 import Accessories from './Pages/Product/Accessories';
 import Tshirts from './Pages/Product/Tshirts';
 import Cart from './Pages/Cart/Cart';
-import Jacket from './Pages/Product/jacket';
+import Jacket from './Pages/Product/Jacket'
 
 function App() {  
   return (
