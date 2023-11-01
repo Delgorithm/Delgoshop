@@ -1,7 +1,6 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home/Home';
-import Category from './Pages/Category/Category';
 import Accessories from './Pages/Product/Accessories';
 import Jacket from './Pages/Product/jacket';
 import Tshirts from './Pages/Product/tshirts';

@@ -6,7 +6,7 @@ import { jacketPage } from '../../data/DataText'
 
 const Jacket = () => {
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const jacketPageText = jacketPage.find(item => item.id === 1);
   const doudouneInformation = jacketPage.find(item => item.id === 2);
