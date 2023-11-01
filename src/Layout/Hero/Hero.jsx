@@ -69,14 +69,14 @@ const Hero = () => {
                 </div>
 
                 <div className='p-3 flex flex-col gap-2'>
-                    <button className='flex flex-col items-center gap-1' onClick={() => navigate('/jacket')}>
+                    <button className='flex flex-col items-center gap-1' onClick={() => navigate('/tshirts')}>
                         <picture>
                             <img src="src/assets/Images/men/tshirt/tshirt07.jpeg" alt="Catégorie vestes" className='transition duration-150 ease-in-out w-28 rounded-xl hover:scale-105' />
                         </picture>
                         <p>T-shirt</p>
                     </button>
 
-                    <button className='flex flex-col items-center gap-1' onClick={() => navigate('/accessories')}>
+                    <button className='flex flex-col items-center gap-1' onClick={() => navigate('/jacket')}>
                         <picture>
                             <img src="src/assets/Images/men/veste/vestes05.jpeg" alt="Catégorie accessoires" className='transition duration-150 ease-in-out w-28 rounded-xl hover:scale-105' />
                         </picture>
