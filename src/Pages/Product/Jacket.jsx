@@ -19,7 +19,7 @@ const Jacket = () => {
         <p className='text-sm pb-4'>{jacketPageText.subtitle}</p>
         <div className='flex gap-3 items-center'>
           <picture>
-            <img src="src/assets/Images/men/veste/doudoune02.jpeg" alt="Catégorie vestes" className='w-52' />
+            <img src="/Images/men/veste/doudoune02.jpeg" alt="Catégorie vestes" className='w-52' />
             <div className='flex justify-between items-center '>
               <p className='font-bold text-xs'>{doudouneInformation.title}</p>
               <p className='text-sm'>{doudouneInformation.price}€</p>
@@ -27,7 +27,7 @@ const Jacket = () => {
           </picture>
 
           <picture>
-            <img src="src/assets/Images/men/veste/vestes05.jpeg" alt="Catégorie vestes" className='w-52'/>
+            <img src="/Images/men/veste/vestes05.jpeg" alt="Catégorie vestes" className='w-52'/>
             <div className='flex justify-between items-center '>
               <p className='font-bold text-xs'>{vesteInformation.title}</p>
               <p className='text-sm'>{vesteInformation.price}€</p>

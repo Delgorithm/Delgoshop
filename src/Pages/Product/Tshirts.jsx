@@ -8,7 +8,7 @@ const Tshirts = () => {
       <Header />
       <p>tshirts</p>
       <picture>
-        <img src="src/assets/Images/men/veste/vestescolor04.jpeg" alt="" />
+        <img src="/Images/men/veste/vestescolor04.jpeg" alt="" />
       </picture>
       <Footer />
     </div>

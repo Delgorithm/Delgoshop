@@ -13,7 +13,7 @@ const Hero = () => {
         <section className=''>
             <picture>
                 <img 
-                    src="src/assets/Images/men/pull/mpull01.jpeg" 
+                    src="/Images/men/pull/mpull01.jpeg" 
                     alt="A men wearing a pull" 
                 />
             </picture>
@@ -28,21 +28,21 @@ const Hero = () => {
 
                 <button className='flex flex-col items-center gap-1' onClick={() => navigate('/jacket')}>
                     <picture>
-                        <img src="src/assets/Images/men/veste/vestes03.jpeg" alt="Catégorie vestes" className='transition duration-150 ease-in-out w-28 rounded-xl hover:scale-105' />
+                        <img src="/Images/men/veste/vestes03.jpeg" alt="Catégorie vestes" className='transition duration-150 ease-in-out w-28 rounded-xl hover:scale-105' />
                     </picture>
                     <p>Vestes</p>
                 </button>
 
                 <button className='flex flex-col items-center gap-1' onClick={() => navigate('/tshirts')}>
                     <picture>
-                        <img src="src/assets/Images/men/tshirt/tshirt01.jpeg" alt="Catégorie t-shirts" className='transition duration-150 ease-in-out w-28 rounded-xl hover:scale-105' />
+                        <img src="/Images/men/tshirt/tshirt01.jpeg" alt="Catégorie t-shirts" className='transition duration-150 ease-in-out w-28 rounded-xl hover:scale-105' />
                     </picture>
                     <p>T-shirts</p>
                 </button>
 
                 <button className='flex flex-col items-center gap-1' onClick={() => navigate('/accessories')}>
                     <picture>
-                        <img src="src/assets/Images/accessories/sac01.jpeg" alt="Catégorie accessoires" className='transition duration-150 ease-in-out w-28 rounded-xl hover:scale-105' />
+                        <img src="/Images/accessories/sac01.jpeg" alt="Catégorie accessoires" className='transition duration-150 ease-in-out w-28 rounded-xl hover:scale-105' />
                     </picture>
                     <p>Accessoires</p>
                 </button>
@@ -55,14 +55,14 @@ const Hero = () => {
                 <div className='p-3 flex flex-col gap-2'>
                     <button className='flex flex-col items-center gap-1' onClick={() => navigate('/jacket')}>
                         <picture>
-                            <img src="src/assets/Images/men/pull/mpull02.jpeg" alt="Catégorie vestes" className='transition duration-150 ease-in-out w-28 rounded-xl hover:scale-105' />
+                            <img src="/Images/men/pull/mpull02.jpeg" alt="Catégorie vestes" className='transition duration-150 ease-in-out w-28 rounded-xl hover:scale-105' />
                         </picture>
                         <p>Pull</p>
                     </button>
 
                     <button className='flex flex-col items-center gap-1' onClick={() => navigate('/accessories')}>
                         <picture>
-                            <img src="src/assets/Images/accessories/sac04.jpeg" alt="Catégorie accessoires" className='transition duration-150 ease-in-out w-28 rounded-xl hover:scale-105' />
+                            <img src="/Images/accessories/sac04.jpeg" alt="Catégorie accessoires" className='transition duration-150 ease-in-out w-28 rounded-xl hover:scale-105' />
                         </picture>
                         <p>Accessoires</p>
                     </button>
@@ -71,14 +71,14 @@ const Hero = () => {
                 <div className='p-3 flex flex-col gap-2'>
                     <button className='flex flex-col items-center gap-1' onClick={() => navigate('/tshirts')}>
                         <picture>
-                            <img src="src/assets/Images/men/tshirt/tshirt07.jpeg" alt="Catégorie vestes" className='transition duration-150 ease-in-out w-28 rounded-xl hover:scale-105' />
+                            <img src="/Images/men/tshirt/tshirt07.jpeg" alt="Catégorie vestes" className='transition duration-150 ease-in-out w-28 rounded-xl hover:scale-105' />
                         </picture>
                         <p>T-shirt</p>
                     </button>
 
                     <button className='flex flex-col items-center gap-1' onClick={() => navigate('/jacket')}>
                         <picture>
-                            <img src="src/assets/Images/men/veste/vestes05.jpeg" alt="Catégorie accessoires" className='transition duration-150 ease-in-out w-28 rounded-xl hover:scale-105' />
+                            <img src="/Images/men/veste/vestes05.jpeg" alt="Catégorie accessoires" className='transition duration-150 ease-in-out w-28 rounded-xl hover:scale-105' />
                         </picture>
                         <p>Vestes</p>
                     </button>
