@@ -21,8 +21,10 @@ const Header = () => {
                       <button onClick={() => navigate('/')}>{item.title}</button>
                   </div>
               ))}
-        
-              <Cart />
+              <div className='relative'>
+                <Cart />
+                <div className='absolute bg-red-400 inset-0 h-5 w-5 left-5 text-center rounded-full flex justify-center items-center'>0</div>
+              </div>
           </div>
       </div>
       <div className='h-16'></div>

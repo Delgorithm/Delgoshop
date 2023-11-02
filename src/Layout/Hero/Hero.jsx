@@ -71,7 +71,7 @@ const Hero = () => {
                 <div className='p-3 flex flex-col gap-2'>
                     <button className='flex flex-col items-center gap-1' onClick={() => navigate('/tshirts')}>
                         <picture>
-                            <img src="/Images/men/tshirt/tshirt07.jpeg" alt="Catégorie vestes" className='transition duration-150 ease-in-out w-28 rounded-xl hover:scale-105' />
+                            <img src="/Images/men/tshirt/tshirt03.jpeg" alt="Catégorie vestes" className='transition duration-150 ease-in-out w-28 rounded-xl hover:scale-105' />
                         </picture>
                         <p>T-shirt</p>
                     </button>

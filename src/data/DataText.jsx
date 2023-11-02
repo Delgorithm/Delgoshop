@@ -44,6 +44,21 @@ export const jacketPage = [
     }
 ]
 
+// Page single product : Jacket 
+export const jacketProductPage = [
+    {
+        id: 1,
+        title: "Veste style surchemise",
+        price: "69,90 €",
+        oldprice: "129,90 €",
+        review: "4.6 (15)",
+        color: "Couleur: ",
+        size: "Taille: ",
+        quantiy: "Quantité : ",
+    }
+]
+// Page single product : Doudoune 
+
 // Footer
 export const footerText = [
     {
