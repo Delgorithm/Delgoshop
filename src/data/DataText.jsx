@@ -30,7 +30,7 @@ export const jacketPage = [
     {
         id: 1,
         title: "Vestes",
-        subtitle: "Notre veste tendance alliant confort et style tout en restant élégant"
+        subtitle: "Nos vestes tendances alliant confort et style tout en restant élégant"
     },
     {
         id: 2,
@@ -58,16 +58,11 @@ export const footerText = [
     },
     {
         id: 3,
-        icon: <AiOutlinePlusCircle />,
-        title: "Vendre",
-    },
-    {
-        id: 4,
         icon: <IoNotificationsOutline />,
         title: "Notifications",
     },
     {
-        id: 5,
+        id: 4,
         icon: <IoPersonOutline />,
         title: "Me",
     },

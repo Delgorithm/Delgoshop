@@ -5,6 +5,8 @@ import Accessories from './Pages/Product/Accessories';
 import Tshirts from './Pages/Product/Tshirts';
 import Cart from './Pages/Cart/Cart';
 import Jacket from './Pages/Product/Jacket'
+import Doudoune from './Pages/Product/Details/Jacket/Doudoune';
+import ClassicJacket from './Pages/Product/Details/Jacket/ClassicJacket';
 
 function App() {  
   return (
@@ -14,6 +16,8 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/accessories' element={<Accessories />} />
           <Route path='/jacket' element={<Jacket />} />
+          <Route path='/jacket/doudoune' element={<Doudoune />} />
+          <Route path='/jacket/classic-jacket' element={<ClassicJacket />} />
           <Route path='/tshirts' element={< Tshirts/>} />
           <Route path='/cart' element={<Cart />} />
         </Route>
