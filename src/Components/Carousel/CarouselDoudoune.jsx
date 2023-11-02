@@ -4,12 +4,8 @@ import Carousel from './Carousel';
 const CarouselDoudoune = () => {
 
     const slides = [
-        "/Images/men/veste/vestes05.jpeg",
-        "/Images/men/veste/vestes06.jpeg",
-        "/Images/men/veste/vestes07.jpeg",
-        "/Images/men/veste/vestes08.jpeg",
-        "/Images/men/veste/vestes09.jpeg",
-        "/Images/men/veste/vestes10.jpeg",
+        "/Images/men/veste/doudoune01.jpeg",
+        "/Images/men/veste/doudoune02.jpeg",
     ];
 
   return (
