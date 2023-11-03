@@ -4,21 +4,26 @@ import CarouselClassicJacket from '../../../../Components/Carousel/CarouselClass
 import Footer from '../../../../Layout/Footer/Footer'
 import { jacketProductPage } from '../../../../data/DataText'
 import { FaStar, FaRegStarHalfStroke } from "react-icons/fa6"
-import AddToCart from '../../../../Components/Forms/Button/Addtocart/AddToCart'
-
+import DataProduct from '../../../../data/DataProduct'
 
 const ClassicJacket = () => {
 
-  const [cart, setCart] = useState([]);
+  const jacketGrey = DataProduct.find(item => item.id === 1);
+  const jacketBrown = DataProduct.find(item => item.id === 2);
 
-  const handleClick = (item) => {
-    console.log(item);
-  }
+  const [cart, setCart] = useState([]);
 
   const jacketProduct = jacketProductPage.find(item => item.id === 1);
 
+  const addToCart = (item) => {
+    setCart([...cart, item]);
+    console.log(jacketGrey);
+  };
+
+  
+
   return (
-    <div className='full'>
+    <div className='h-full'>
       <Header />
       <CarouselClassicJacket />
       <div className='p-3'>
@@ -60,7 +65,9 @@ const ClassicJacket = () => {
           <button className='w-8 h-8 bg-lightblack text-white flex justify-center items-center'>XL</button>
         </div>
         <div className='h-4'></div>
-        <AddToCart />
+      </div>
+      <div className='flex justify-center items-center'>
+        <button onClick={() => addToCart(jacketGrey)} className='bg-lightblack p-2 w-8/12 text-white'>Ajouter au panier</button>
       </div>
       <Footer />
     </div>
