@@ -2,5 +2,10 @@
     "cSpell.ignoreWords": [
         "Jacket",
         "Product"
+    ],
+    "editor.cursorStyle": "line",
+    "workbench.activityBar.location": "top",
+    "cSpell.words": [
+        "Sidebar"
     ]
 }
