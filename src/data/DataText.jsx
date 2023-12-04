@@ -51,7 +51,7 @@ export const jacketProductPage = [
         title: "Veste style surchemise",
         price: "69,90 €",
         oldprice: "129,90 €",
-        review: "4.6 (15)",
+        review: "4.5 (15)",
         color: "Couleur: ",
         size: "Taille: ",
         quantiy: "Quantité : ",
