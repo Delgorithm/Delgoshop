@@ -1,6 +1,5 @@
 import React from 'react'
 import { DataImgCarrousel } from '../data/DataImgCarrousel'
-import { MdChevronLeft, MdChevronRight } from 'react-icons/md'
 
 const Carroussel = () => {
   return (

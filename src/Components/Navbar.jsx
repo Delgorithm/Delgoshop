@@ -3,9 +3,9 @@ import { RiMenu2Fill } from "react-icons/ri";
 import { IoCartOutline } from "react-icons/io5";
 import { AiOutlineClose } from "react-icons/ai";
 import Button from './Button';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-
     let menuLinks = [
         { name: "Accueil", link:"/" },
         { name: "Panier", link:"/cart" },
@@ -32,7 +32,7 @@ const Navbar = () => {
                 </div>
                 {navLinks.map((link) => (
                     <li key={link.name} className='flex text-3xl'>
-                        <a href={link.link}>{link.name}</a>
+                        <Link to={link.link}>{link.name}</Link>
                     </li>
                 ))}
             </section>
@@ -41,7 +41,7 @@ const Navbar = () => {
                 <ul className={'flex flex-col items-center absolute bg-lightgray pb-10 pt-12 left-0 w-full h-screen opacity-100 z-50'}>
                         {menuLinks.map((link) => (
                             <li key={link.name} className='flex flex-col justify-center mt-10 z-50'>
-                                <a href={link.link} className='text-xl z-50'>{link.name}</a>
+                                <Link to={link.link} className='text-xl z-50'>{link.name}</Link>
                             </li>
                         ))}
                     <div className='flex flex-col w-1/2 mt-8 pt-4 gap-6'>
