@@ -8,21 +8,21 @@ const Navbar = () => {
 
     let menuLinks = [
         { name: "Accueil", link:"/" },
-        { name: "Panier", link:"/" },
-        { name: "Catégorie", link:"/" },
-        { name: "Contact", link:"/" }
+        { name: "Panier", link:"/cart" },
+        { name: "Catégorie", link:"/category" },
+        { name: "Contact", link:"/contact" }
     ];
 
     let navLinks = [
         { name: "Delgoshop", link:"/"},
-        { name: <IoCartOutline />, link:"/"},
+        { name: <IoCartOutline />, link:"/cart"},
     ]
 
     let [open, setOpen] = useState(true);
 
     return (
-        <div className='bg-lightgray p-5 w-full fixed top-0 left-0'>
-            <section className='relative flex justify-between items-center z-10'>
+        <div className='bg-lightgray p-5 w-full relative top-0 left-0 z-50'>
+            <section className='flex justify-between items-center z-10'>
                 <div onClick={() => setOpen(!open)}>
                     {open ? (
                         <RiMenu2Fill className='text-3xl cursor-pointer z-50' />
@@ -44,7 +44,7 @@ const Navbar = () => {
                                 <a href={link.link} className='text-xl z-50'>{link.name}</a>
                             </li>
                         ))}
-                    <div className='flex flex-col w-1/2 mt-12 pt-4 gap-6'>
+                    <div className='flex flex-col w-1/2 mt-8 pt-4 gap-6'>
                         <Button>Se connecter</Button>
                         <Button>S'inscrire</Button>
                     </div>

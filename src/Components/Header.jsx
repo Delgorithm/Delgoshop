@@ -6,7 +6,6 @@ import Hero from './Hero'
 const Header = () => {
   return (
     <div>
-      Header
       <Navbar />
       <Hero />
     </div>

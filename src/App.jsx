@@ -5,19 +5,24 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home';
 import ProductDetails from './Pages/ProductDetails';
 // import components
-import Sidebar from './Components/Sidebar';
-import Footer from './Components/Footer';
-import Header from './Components/Header';
+import Cart from './Pages/Cart';
+import Bookmark from './Pages/Bookmark';
+import Account from './Pages/Account';
+import Category from './Pages/Category';
+import Contact from './Pages/Contact';
 
 function App() {  
   return (
     <BrowserRouter>
-      <Header />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/product/:id' element={<ProductDetails />} />
+        <Route path='/cart' element={<Cart />} />
+        <Route path='/bookmark' element={<Bookmark />} />
+        <Route path='/account' element={<Account />} />
+        <Route path='/category' element={<Category />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
-      <Footer />
     </BrowserRouter>
   )
 }
