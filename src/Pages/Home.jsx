@@ -4,6 +4,7 @@ import DataProduct from '../data/DataProduct'
 const Home = () => {
   return (
     <div>
+      Home
     </div>
   )
 }
