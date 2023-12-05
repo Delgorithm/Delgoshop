@@ -10,6 +10,8 @@ import Bookmark from './Pages/Bookmark';
 import Account from './Pages/Account';
 import Category from './Pages/Category';
 import Contact from './Pages/Contact';
+import Men from './Pages/Men';
+import Accessories from './Pages/Accessories';
 
 function App() {  
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path='/bookmark' element={<Bookmark />} />
         <Route path='/account' element={<Account />} />
         <Route path='/category' element={<Category />} />
+        <Route path='/category/men' element={<Men />} />
+        <Route path='/category/accessories' element={<Accessories />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
     </BrowserRouter>

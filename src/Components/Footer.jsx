@@ -12,7 +12,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className='bg-lightgray p-6 w-full fixed bottom-0 left-0 flex justify-around'>
+    <div className='bg-lightgray p-3 w-full fixed bottom-0 left-0 flex justify-around'>
       {footerLinks.map((link) => (
         <li key={link.icon} className='flex'>
           <Link to={link.link} className='text-3xl'>{link.icon}</Link>

@@ -5,7 +5,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import Button from './Button';
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+const   Navbar = () => {
     let menuLinks = [
         { name: "Accueil", link:"/" },
         { name: "Panier", link:"/cart" },
@@ -21,7 +21,7 @@ const Navbar = () => {
     let [open, setOpen] = useState(true);
 
     return (
-        <div className='bg-lightgray p-5 w-full relative top-0 left-0 z-50'>
+        <div className='bg-lightgray p-5 w-full fixed top-0 left-0 z-50'>
             <section className='flex justify-between items-center z-10'>
                 <div onClick={() => setOpen(!open)}>
                     {open ? (
