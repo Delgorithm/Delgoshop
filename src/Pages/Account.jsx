@@ -6,7 +6,9 @@ const Account = () => {
   return (
     <div>
         <Navbar />
-        <p>Account</p>
+        <div className='h-screen'>
+          <p>Account</p>
+        </div>
         <Footer />
     </div>
   )

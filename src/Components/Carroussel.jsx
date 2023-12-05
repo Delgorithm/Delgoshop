@@ -3,7 +3,7 @@ import { DataImgCarrousel } from '../data/DataImgCarrousel'
 
 const Carroussel = () => {
   return (
-    <div className='h-64'>
+    <div className='h-52'>
       <p className='flex justify-center items-center p-2 text-xl mt-2'>Produits en vedettes</p>
       <div className='relative flex items-center overflow-x-scroll whitespace-nowrap scroll-smooth overflow-hidden'>
           <div id="slider">

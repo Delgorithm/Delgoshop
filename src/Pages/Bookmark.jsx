@@ -6,7 +6,9 @@ const Bookmark = () => {
   return (
     <div>
         <Navbar />
-        <p>Bookmark</p>
+        <div className='h-screen'>
+          <p>bookmark</p>
+        </div>
         <Footer />
     </div>
   )
