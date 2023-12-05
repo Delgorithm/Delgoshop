@@ -4,7 +4,7 @@ import Button from './Button'
 const Hero = () => {
 
   return (
-    <div className='h-screen z-0'>
+    <div className='h-fit-content z-0'>
         <div className='relative'>
             <div className='absolute top-[45dvh] w-full flex justify-center -z-1'>
                 <Button>Voir les nouveautés</Button>
