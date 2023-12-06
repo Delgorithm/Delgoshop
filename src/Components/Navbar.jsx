@@ -30,8 +30,8 @@ const   Navbar = () => {
                         <AiOutlineClose className='text-3xl cursor-pointer' />
                     )}
                 </div>
-                {navLinks.map((link) => (
-                    <li key={link.name} className='flex text-3xl'>
+                {navLinks.map((link, index) => (
+                    <li key={index} className='flex text-3xl'>
                         <Link to={link.link}>{link.name}</Link>
                     </li>
                 ))}
@@ -39,8 +39,8 @@ const   Navbar = () => {
 
             {!open && (
                 <ul className={'flex flex-col items-center absolute bg-lightgray pb-10 pt-12 left-0 w-full h-screen opacity-100 z-50'}>
-                        {menuLinks.map((link) => (
-                            <li key={link.name} className='flex flex-col justify-center mt-10 z-50'>
+                        {menuLinks.map((link, index) => (
+                            <li key={index} className='flex flex-col justify-center mt-10 z-50'>
                                 <Link to={link.link} className='text-xl z-50'>{link.name}</Link>
                             </li>
                         ))}
