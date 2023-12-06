@@ -1,12 +1,12 @@
 import React from 'react'
-import Header from '../Components/Header'
+import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 
 const Bag = () => {
   return (
     <div>
-      <Header />
-      <p>Bag</p>
+      <Navbar />
+      <img src="/Images/accessories/sac01.jpeg" alt="" />
       <Footer />
     </div>
   )

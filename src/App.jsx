@@ -27,20 +27,19 @@ function App() {
         <Route path='/cart' element={<Cart />} />
         <Route path='/bookmark' element={<Bookmark />} />
         <Route path='/account' element={<Account />} />
-        <Route path='/category' element={<Category />}>
-          <Route path='men' element={<Men />}>
-            <Route path='chemise' element={<Chemise />} />
-            <Route path='sur-chemise' element={<Surchemise />} />
-            <Route path='t-shirt' element={<Tshirt/>} />
-            <Route path='pantalon' element={<Trousers />} />
-          </Route>
-          <Route path='accessories' element={<Accessories />}>
-            <Route path='sac' element={<Bag />} />
-          </Route>
-        </Route>
         <Route path='/contact' element={<Contact />} />
+        <Route path='/category' element={<Category />} />
+        <Route path='/category/men' element={<Men />} />
+        <Route path='/category/men/chemise' element={<Chemise />} />
+        <Route path='/category/men/sur-chemise' element={<Surchemise />} />
+        <Route path='/category/men/t-shirt' element={<Tshirt/>} />
+        <Route path='/category/men/pantalon' element={<Trousers />} />
+        <Route path='/category/accessories' element={<Accessories />} />
+        <Route path='/category/accessories/sac' element={<Bag />} />
       </Routes>
     </BrowserRouter>
   )
+  // category/accessories/sac
+
 }
 export default App

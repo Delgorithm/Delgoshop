@@ -1,13 +1,14 @@
 import React from 'react'
-import Header from '../Components/Header'
+
 import Footer from '../Components/Footer'
+import Navbar from '../Components/Navbar'
 
 const Chemise = () => {
   return (
     <div>
-        <Header />
-        <p>Chemise section</p>
-        <Footer />
+      <Navbar />
+      <p className='mt-16'>Chemise section</p>
+      <Footer />
     </div>
   )
 }

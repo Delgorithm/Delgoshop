@@ -6,7 +6,7 @@ const Cart = () => {
   return (
     <div>
         <Navbar />
-        <p>azodija cart</p>
+        <p className='mt-16'>cart</p>
         <Footer />
     </div>
   )

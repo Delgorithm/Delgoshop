@@ -6,7 +6,7 @@ const Men = () => {
   return (
     <div>
       <Navbar />
-      <p>Homme</p>
+      <p className='h-screen bg-blue-600'>Homme</p>
       <Footer />
     </div>
   )
