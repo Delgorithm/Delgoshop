@@ -21,7 +21,7 @@ const   Navbar = () => {
     let [open, setOpen] = useState(true);
 
     return (
-        <div className='bg-lightgray p-4 w-full sticky top-0 left-0 z-50'>
+        <div className='bg-lightgray p-4 w-full fixed top-0 left-0 z-50'>
             <section className='flex justify-between items-center z-10'>
                 <div onClick={() => setOpen(!open)}>
                     {open ? (

@@ -7,9 +7,10 @@ const Carroussel = () => {
       <p className='flex justify-center items-center p-2 text-xl mt-2'>Produits en vedettes</p>
       <div className='relative flex items-center overflow-x-scroll whitespace-nowrap scroll-smooth overflow-hidden'>
           <div id="slider">
-              {DataImgCarrousel.map((item) => (
+              {DataImgCarrousel.map((item, index) => (
                   <img 
                   src={item.img} 
+                  key={index}
                   alt='' 
                   className='w-40 p-2 inline-block cursor-pointer hover:scale-105 ease-in-out duration-200'
                   />
