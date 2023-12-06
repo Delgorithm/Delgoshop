@@ -17,29 +17,30 @@ import Bag from './Pages/Bag';
 import Surchemise from './Pages/Surchemise';
 import Trousers from './Pages/Trousers';
 import Tshirt from './Pages/Tshirt';
+import { ShopContextProvider } from './Contexts/ShopContextProvider';
 
 function App() {  
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/product/:id' element={<ProductDetails />} />
-        <Route path='/cart' element={<Cart />} />
-        <Route path='/bookmark' element={<Bookmark />} />
-        <Route path='/account' element={<Account />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/category' element={<Category />} />
-        <Route path='/category/men' element={<Men />} />
-        <Route path='/category/men/chemise' element={<Chemise />} />
-        <Route path='/category/men/sur-chemise' element={<Surchemise />} />
-        <Route path='/category/men/t-shirt' element={<Tshirt/>} />
-        <Route path='/category/men/pantalon' element={<Trousers />} />
-        <Route path='/category/accessories' element={<Accessories />} />
-        <Route path='/category/accessories/sac' element={<Bag />} />
-      </Routes>
-    </BrowserRouter>
+    <ShopContextProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/product/:id' element={<ProductDetails />} />
+          <Route path='/cart' element={<Cart />} />
+          <Route path='/bookmark' element={<Bookmark />} />
+          <Route path='/account' element={<Account />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/category' element={<Category />} />
+          <Route path='/category/men' element={<Men />} />
+          <Route path='/category/men/chemise' element={<Chemise />} />
+          <Route path='/category/men/sur-chemise' element={<Surchemise />} />
+          <Route path='/category/men/t-shirt' element={<Tshirt/>} />
+          <Route path='/category/men/pantalon' element={<Trousers />} />
+          <Route path='/category/accessories' element={<Accessories />} />
+          <Route path='/category/accessories/sac' element={<Bag />} />
+        </Routes>
+      </BrowserRouter>
+    </ShopContextProvider>
   )
-  // category/accessories/sac
-
 }
 export default App

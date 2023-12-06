@@ -1,7 +1,7 @@
 export const DataCategory = [
     {
         id: 1,
-        img: "/Images/men/chemise/chesmise03.jpeg",
+        img: "/Images/men/chemise/chemise03.jpeg",
         name: "Chemise",
         link: "/category/men/chemise"
     },
