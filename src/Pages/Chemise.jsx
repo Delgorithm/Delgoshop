@@ -20,8 +20,15 @@ const slides = [
 const Chemise = () => {
 
   const { addToCart } = useContext(ShopContext);
-  const chemiseData = DataProduct.filter(item => item.id === 15)[0];
+  const handleAddToCart = () => {
+    addToCart({ 
+        img: "/Images/men/chemise/chemise03.jpeg",
+        name: 'Chemise classique', 
+        price: 49.99 });
+    console.log('test')
+  }
 
+  const chemiseData = DataProduct.filter(item => item.id === 15)[0];
   return (
     <div>
       <Navbar />
@@ -42,7 +49,7 @@ const Chemise = () => {
       </section>
       <div className='flex justify-center items-center'>
         <button 
-          onClick={() => addToCart(chemiseData.id)}
+          onClick={handleAddToCart}
           className='bg-black text-white w-48 h-12 rounded-sm mt-4 active:translate-y-1 active:opacity-50 active:bg-white active:text-black hover:opacity-80'
         >
           Ajouter au panier
