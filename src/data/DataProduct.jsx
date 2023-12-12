@@ -2,24 +2,24 @@ const DataProduct = [
     {
         id: 1,
         name: "Veste classique : Grise",
-        new_price: 69.9,
-        old_price: 129.9,
+        new_price: 69.99,
+        old_price: 129.99,
     },
     {
         id: 2,
         name: "Veste classique : Marron",
-        new_price: 69.9,
-        old_price: 129.9,
+        new_price: 69.99,
+        old_price: 129.99,
     },
     {
         id: 3,
         name: "Doudoune légère : Noir",
-        new_price: 39.9,
+        new_price: 39.99,
     },
     {
         id: 4,
         name: "Doudoune légère : KaKi",
-        new_price: 39.9,
+        new_price: 39.99,
     },
     {
         id: 5,
@@ -79,6 +79,11 @@ const DataProduct = [
         name: "Chemise classique",
         new_price: 49.99,
         old_price: 59.99,
+    },
+    {
+        id: 16,
+        name: "Sac à dos",
+        price: 99.99,
     }
 ]
 

@@ -22,13 +22,14 @@ const Chemise = () => {
   const { addToCart } = useContext(ShopContext);
   const handleAddToCart = () => {
     addToCart({ 
+        id: 1,
         img: "/Images/men/chemise/chemise03.jpeg",
         name: 'Chemise classique', 
         price: 49.99 });
-    console.log('test')
   }
 
   const chemiseData = DataProduct.filter(item => item.id === 15)[0];
+  
   return (
     <div>
       <Navbar />

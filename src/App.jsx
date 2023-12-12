@@ -15,7 +15,7 @@ import Accessories from './Pages/Accessories';
 import Chemise from './Pages/Chemise';
 import Bag from './Pages/Bag';
 import Surchemise from './Pages/Surchemise';
-import Trousers from './Pages/Trousers';
+import Pantalon from './Pages/Pantalon';
 import Tshirt from './Pages/Tshirt';
 import { ShopContextProvider } from './Contexts/ShopContextProvider';
 
@@ -35,7 +35,7 @@ function App() {
           <Route path='/category/men/chemise' element={<Chemise />} />
           <Route path='/category/men/sur-chemise' element={<Surchemise />} />
           <Route path='/category/men/t-shirt' element={<Tshirt/>} />
-          <Route path='/category/men/pantalon' element={<Trousers />} />
+          <Route path='/category/men/pantalon' element={<Pantalon />} />
           <Route path='/category/accessories' element={<Accessories />} />
           <Route path='/category/accessories/sac' element={<Bag />} />
         </Routes>

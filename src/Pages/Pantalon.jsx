@@ -1,38 +1,33 @@
 import React, { useContext } from 'react'
-import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
+import Footer from '../Components/Footer'
 import CarrousselProduct from '../Components/CarrousselProduct'
 import DataProduct from '../data/DataProduct'
 import { ShopContext } from '../Contexts/ShopContextProvider'
 
 const slides = [
-  "/Images/men/tshirt/tshirt01.jpeg",
-  "/Images/men/tshirt/tshirt02.jpeg",
-  "/Images/men/tshirt/tshirt03.jpeg",
-  "/Images/men/tshirt/tshirt04.jpeg",
-  "/Images/men/tshirt/tshirt05.jpeg",
-  "/Images/men/tshirt/tshirt06.jpeg",
-  "/Images/men/tshirt/tshirt07.jpeg",
-  "/Images/men/tshirt/tshirt08.jpeg",
-  "/Images/men/tshirt/tshirt09.jpeg",
-  "/Images/men/tshirt/tshirt11.jpeg",
-  "/Images/men/tshirt/tshirt12.jpeg",
+  "/Images/men/pantalon/pantalon01.jpeg",
+  "/Images/men/pantalon/pantalon02.jpeg",
+  "/Images/men/pantalon/pantalon03.jpeg",
+  "/Images/men/pantalon/pantalon04.jpeg",
+  "/Images/men/pantalon/pantalon05.jpeg",
+  "/Images/men/pantalon/pantalon06.jpeg",
 ]
 
-const Tshirt = () => {
+const Pantalon = () => {
 
   const { addToCart } = useContext(ShopContext);
   const handleAddToCart = () => {
     addToCart({
-      id: 3,
-      img: "/Images/men/tshirt/tshirt11.jpeg",
-      name: "T-shirt",
-      price: 19.99
+      id: 4,
+      img: "/Images/men/pantalon/pantalon01.jpeg",
+      name: "Pantalon costume",
+      price: 39.99
     });
   }
 
-  const tshirtData = DataProduct.filter(item => item.id === 6)[0];
-  
+  const pantalonData = DataProduct.filter(item => item.id === 14)[0];
+
   return (
     <div>
       <Navbar />
@@ -45,10 +40,10 @@ const Tshirt = () => {
         </CarrousselProduct>
       </section>
       <section className='flex justify-around pt-4 items-center'>
-        <p className='text-xl'>{tshirtData.name}</p>
+        <p className='text-lg'>{pantalonData.name}</p>
         <div className='flex justify-end gap-6 items-center'>
-          <p className='line-through text-zinc-400'>{tshirtData.old_price}</p>
-          <p className='text-2xl text-red-500 font-bold'>{tshirtData.new_price}</p>
+          <p className='line-through text-zinc-400'>{pantalonData.old_price}</p>
+          <p className='text-2xl text-red-500 font-bold'>{pantalonData.new_price}</p>
         </div>
       </section>
       <div className='flex justify-center items-center'>
@@ -64,4 +59,4 @@ const Tshirt = () => {
   )
 }
 
-export default Tshirt
+export default Pantalon

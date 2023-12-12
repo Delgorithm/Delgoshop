@@ -16,7 +16,7 @@ const Cart = () => {
   return (
     <div>
         <Navbar />
-        <p className='mt-16'>Votre panier</p>
+        <div className='mt-20'></div>
         {cart.map((product, index) => (
           <div key={index} className='m-4 flex items-center justify-around'>
             <img src={product.img} alt="" className='w-24' />
@@ -32,9 +32,9 @@ const Cart = () => {
             </div>
           </div>
         ))}
-        <div className='flex justify-around text-4xl items-end bg-red-400'>
+        <div className='flex justify-around text-4xl items-end'>
           <p>Total :</p>
-          <p>{totalAmount}</p>
+          <p>{totalAmount}€</p>
         </div>
         <Footer />
     </div>
