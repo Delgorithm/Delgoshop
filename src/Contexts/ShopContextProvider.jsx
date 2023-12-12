@@ -9,63 +9,51 @@ export const useCart = () => {
     throw new Error('useCart must be used within a ShopContextProvider');
   }
   return context;
-};
+}
+
 
 export const ShopContextProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
 
   const addToCart = (product) => {
-    setCart([...cart, product]);
+    const productExists = cart.find(item => item.id === product.id);
+    if (productExists) {
+      const updatedCart = cart.map(item =>
+        item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item  
+      );
+      setCart(updatedCart);
+    } else {
+      setCart([...cart, { ...product, quantity: 1 }]);
+    }
+  }
+
+
+  // Increment
+  const incrementQuantity = (productId) => {
+    const updatedCart = cart.map(item => {
+      if (item.id === productId) {
+        return { ...item, quantity: item.quantity + 1 };
+      }
+      return item;
+    });
+    setCart(updatedCart);
+  };
+
+  // Decrement
+  const decrementQuantity = (productId) => {
+    const updatedCart = cart.map(item => {
+      if (item.id === productId) {
+        return { ...item, quantity: item.quantity - 1};
+      }
+      return item;
+    })
+    .filter(item => item.quantity > 0);
+  setCart(updatedCart);
   };
 
   return (
-    <ShopContext.Provider value={{ cart, addToCart }}>
+    <ShopContext.Provider value={{ cart, addToCart, incrementQuantity, decrementQuantity }}>
       {children}
     </ShopContext.Provider>
   )
 }
-
-// export const ShopContext = createContext();
-
-// export const ShopContextProvider = ({ children }) => {
-//   const [cart, setCart] = useState([]);
-
-//   const addToCart = (product) => {
-//     setCart([...cart, product]);
-//   };
-
-//   return (
-//     <ShopContext.Provider value={{cart, addToCart }}>
-//       {children}
-//     </ShopContext.Provider>
-//   )
-
-// }
-
-// export const ShopContext = createContext(null);
-
-// const getDefaultCart = () => {
-//   let cart = {}
-//   DataProduct.forEach((item) => {
-//     cart[item.id] = 0;
-//   });
-//   return cart;
-// }
-
-// export const ShopContextProvider = (props) => {
-//   const [cartItems, setCartItems] = useState(getDefaultCart());
-
-//   const addToCart = (id) => {
-//     setCartItems((prev) => ({...prev, [id]: prev[id] + 1}));
-//   };
-
-//   const removeFromCart = (id) => {
-//     setCartItems((prev) => ({...prev, [id]: prev[id] - 1}));
-//   };
-  
-//   const contextValue = {cartItems, addToCart, removeFromCart}
-
-//   return (
-//     <ShopContext.Provider value={contextValue}>{props.children}</ShopContext.Provider>
-//   )
-// }
