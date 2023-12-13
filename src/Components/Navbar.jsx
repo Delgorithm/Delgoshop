@@ -4,6 +4,7 @@ import { IoCartOutline } from "react-icons/io5";
 import { AiOutlineClose } from "react-icons/ai";
 import Button from './Button';
 import { Link } from 'react-router-dom';
+import CompteurCart from './CompteurCart';
 
 const   Navbar = () => {
     let menuLinks = [
@@ -35,6 +36,9 @@ const   Navbar = () => {
                         <Link to={link.link}>{link.name}</Link>
                     </li>
                 ))}
+                <div className='absolute right-2 top-1'>
+                    <CompteurCart />
+                </div>
             </section>
 
             {!open && (

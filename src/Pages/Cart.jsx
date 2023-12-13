@@ -18,21 +18,21 @@ const Cart = () => {
         <Navbar />
         <div className='mt-20'></div>
         {cart.map((product, index) => (
-          <div key={index} className='m-4 flex items-center justify-around'>
-            <img src={product.img} alt="" className='w-24' />
-            <p>{product.name} - {product.price}</p>
+          <div key={index} className='m-4 flex items-center justify-between'>
+            <img src={product.img} alt="" className='w-20' />
+            <p className='text-xs'>{product.name} - {product.price}€</p>
             <div className='flex gap-5 items-center'>
               <button 
-                className='p-2 bg-slate-400 text-2xl'
+                className='p-2 bg-slate-400 text-xl'
                 onClick={() => decrementQuantity(product.id)}>-</button>
               <button
-                className='p-2 bg-red-400 text-2xl'
+                className='p-2 bg-red-400 text-xl'
                 onClick={() => incrementQuantity(product.id)}>+</button>
-              <p className='p-2 bg-blue-400'>{product.quantity}</p>
+              <p className='p-2.5 bg-blue-400'>{product.quantity}</p>
             </div>
           </div>
         ))}
-        <div className='flex justify-around text-4xl items-end'>
+        <div className='flex justify-around text-4xl items-end mb-20'>
           <p>Total :</p>
           <p>{totalAmount}€</p>
         </div>

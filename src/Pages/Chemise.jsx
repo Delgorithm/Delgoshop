@@ -5,7 +5,6 @@ import CarrousselProduct from '../Components/CarrousselProduct'
 import DataProduct from '../data/DataProduct'
 import { ShopContext } from '../Contexts/ShopContextProvider'
 
-
 const slides = [
   "/Images/men/chemise/chemise01.jpeg",
   "/Images/men/chemise/chemise02.jpeg",
@@ -29,7 +28,7 @@ const Chemise = () => {
   }
 
   const chemiseData = DataProduct.filter(item => item.id === 15)[0];
-  
+
   return (
     <div>
       <Navbar />
