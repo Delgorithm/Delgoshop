@@ -11,7 +11,7 @@ export default function CarrousselProduct({ children: slides }) {
         setCurr((curr => curr === slides.length - 1 ? 0 : curr + 1));
 
     return (
-        <div className="overflow-hidden relative">
+        <div className="overflow-hidden relative w-screen md:h-[65vh]">
             <div 
                 className="flex transition-transform ease-in-out duration-300" 
                 style={{transform: `translateX(-${curr * 100}%)`}}>{slides}

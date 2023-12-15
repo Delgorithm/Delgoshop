@@ -8,7 +8,6 @@ import ProductDetails from './Pages/ProductDetails';
 import Cart from './Pages/Cart';
 import Bookmark from './Pages/Bookmark';
 import Account from './Pages/Account';
-import Category from './Pages/Category';
 import Contact from './Pages/Contact';
 import Men from './Pages/Men';
 import Accessories from './Pages/Accessories';
@@ -18,6 +17,9 @@ import Surchemise from './Pages/Surchemise';
 import Pantalon from './Pages/Pantalon';
 import Tshirt from './Pages/Tshirt';
 import { ShopContextProvider } from './Contexts/ShopContextProvider';
+import CheckoutForm from './Pages/Stripe/CheckoutForm';
+
+
 
 function App() {  
   return (
@@ -30,7 +32,6 @@ function App() {
           <Route path='/bookmark' element={<Bookmark />} />
           <Route path='/account' element={<Account />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/category' element={<Category />} />
           <Route path='/category/men' element={<Men />} />
           <Route path='/category/men/chemise' element={<Chemise />} />
           <Route path='/category/men/sur-chemise' element={<Surchemise />} />
@@ -38,6 +39,7 @@ function App() {
           <Route path='/category/men/pantalon' element={<Pantalon />} />
           <Route path='/category/accessories' element={<Accessories />} />
           <Route path='/category/accessories/sac' element={<Bag />} />
+          <Route path='/checkout' element={<CheckoutForm />} />
         </Routes>
       </BrowserRouter>
     </ShopContextProvider>

@@ -10,7 +10,6 @@ const   Navbar = () => {
     let menuLinks = [
         { name: "Accueil", link:"/" },
         { name: "Panier", link:"/cart" },
-        { name: "Catégorie", link:"/category" },
         { name: "Contact", link:"/contact" }
     ];
 

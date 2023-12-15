@@ -4,9 +4,13 @@ import { Link } from 'react-router-dom'
 
 const GridProducts = () => {
   return (
-    <div className='mb-14'>
+    <div className='mb-14 md:mb-10'>
       <p className='flex justify-center items-center p-2 text-xl'>Catégories</p>
-      <section className='p-5 grid grid-cols-2 grid-rows-3 gap-10'>
+      <section 
+        className='
+          p-5 grid grid-cols-2 grid-rows-3 gap-10
+          md:p-8 md:grid-cols-5 md:grid-rows-1
+        '>
         {DataCategory.map((item, index) => (
           <button 
             key={index}
@@ -15,7 +19,6 @@ const GridProducts = () => {
             <Link to={item.link}>
               <img 
                 src={item.img} 
-                // alt={`Catégorie : ${item.name}`}
                 className='rounded-lg inline-block'
               />
               <p>{item.name}</p>

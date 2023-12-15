@@ -33,7 +33,9 @@ const Chemise = () => {
     <div>
       <Navbar />
       <div className='mt-16'></div>
-      <section className='max-w-lg'>
+      <section className='
+        max-w-lg
+      '>
         <CarrousselProduct>
           {slides.map((item, index) => (
             <img key={index} src={item} alt="" />
