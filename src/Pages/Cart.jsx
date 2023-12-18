@@ -2,7 +2,6 @@ import React from 'react'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import { useCart } from '../Contexts/ShopContextProvider'
-import { loadStripe } from '@stripe/stripe-js'
 
 const Cart = () => {
 
@@ -14,14 +13,6 @@ const Cart = () => {
   const totalAmount = cart.reduce((total, product) => {
     return total + (product.price * product.quantity);
   }, 0).toFixed(2);
-
-  const makePayment = async () => {
-    const stripe = await loadStripe(apiKeyStripe);
-
-    const body = {
-      products: finalCart
-    }
-  }
 
   return (
     <div>

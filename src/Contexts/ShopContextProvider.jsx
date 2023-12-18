@@ -1,5 +1,4 @@
 import React, { createContext, useContext, useState } from 'react'
-import DataProduct from '../data/DataProduct';
 
 export const ShopContext = createContext();
 
@@ -10,7 +9,6 @@ export const useCart = () => {
   }
   return context;
 }
-
 
 export const ShopContextProvider = ({ children }) => {
   const [cart, setCart] = useState([]);

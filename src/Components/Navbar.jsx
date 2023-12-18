@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { RiMenu2Fill } from "react-icons/ri";
 import { IoCartOutline } from "react-icons/io5";
 import { AiOutlineClose } from "react-icons/ai";
-import Button from './Button';
 import { Link } from 'react-router-dom';
 import CompteurCart from './CompteurCart';
 
@@ -16,6 +15,11 @@ const   Navbar = () => {
     let navLinks = [
         { name: "Delgoshop", link:"/"},
         { name: <IoCartOutline />, link:"/cart"},
+    ]
+
+    let logsAuth = [
+        { name: "Se connecter", link:"/signin"},
+        { name: "S'inscrire", link:"/signup"},
     ]
 
     let [open, setOpen] = useState(true);
@@ -47,10 +51,17 @@ const   Navbar = () => {
                                 <Link to={link.link} className='text-xl z-50'>{link.name}</Link>
                             </li>
                         ))}
-                    <div className='flex flex-col w-1/2 mt-8 pt-4 gap-6'>
+                        {logsAuth.map((link, index) => (
+                            <div key={index} className='flex flex-col w-1/2 mt-8 pt-4 gap-6 justify-center items-center'>
+                                <li key={index} className='py-2 px-6 bg-white rounded hover:opacity-60 duration-500 active:bg-slate-400'>
+                                    <Link to={link.link}>{link.name}</Link>
+                                </li>
+                            </div>
+                        ))}
+                    {/* >
                         <Button>Se connecter</Button>
                         <Button>S'inscrire</Button>
-                    </div>
+                    </div> */}
                 </ul>
             )}
         </div>

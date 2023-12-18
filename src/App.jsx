@@ -17,7 +17,8 @@ import Surchemise from './Pages/Surchemise';
 import Pantalon from './Pages/Pantalon';
 import Tshirt from './Pages/Tshirt';
 import { ShopContextProvider } from './Contexts/ShopContextProvider';
-import CheckoutForm from './Pages/Stripe/CheckoutForm';
+import SignIn from './Components/Auth/SignIn';
+import SignUp from './Components/Auth/SignUp';
 
 
 
@@ -32,14 +33,15 @@ function App() {
           <Route path='/bookmark' element={<Bookmark />} />
           <Route path='/account' element={<Account />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/category/men' element={<Men />} />
-          <Route path='/category/men/chemise' element={<Chemise />} />
-          <Route path='/category/men/sur-chemise' element={<Surchemise />} />
-          <Route path='/category/men/t-shirt' element={<Tshirt/>} />
-          <Route path='/category/men/pantalon' element={<Pantalon />} />
-          <Route path='/category/accessories' element={<Accessories />} />
-          <Route path='/category/accessories/sac' element={<Bag />} />
-          <Route path='/checkout' element={<CheckoutForm />} />
+          <Route path='/men' element={<Men />} />
+          <Route path='/men/chemise' element={<Chemise />} />
+          <Route path='/men/sur-chemise' element={<Surchemise />} />
+          <Route path='/men/t-shirt' element={<Tshirt/>} />
+          <Route path='/men/pantalon' element={<Pantalon />} />
+          <Route path='/accessories' element={<Accessories />} />
+          <Route path='/accessories/sac' element={<Bag />} />
+          <Route path='/signin' element={<SignIn />} />
+          <Route path='/signup' element={<SignUp />} />
         </Routes>
       </BrowserRouter>
     </ShopContextProvider>

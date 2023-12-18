@@ -6,7 +6,7 @@ const Account = () => {
   return (
     <div>
         <Navbar />
-        <div className='h-screen'>
+        <div className='mt-20'>
           <p>Account</p>
         </div>
         <Footer />
